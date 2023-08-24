@@ -58,13 +58,15 @@ def main():
     parser.add_argument(
             "--start-date", default=None,
             required=True, dest="start",
-            type=datetime.date.fromisoformat
+            type=datetime.date.fromisoformat,
+            help="Example: --start-date 2023-02-01"
             )
 
     parser.add_argument(
             "--end-date", default=None,
             required=True, dest="end",
-            type=datetime.date.fromisoformat
+            type=datetime.date.fromisoformat,
+            help="Example: --end-date 2023-02-01"
             )
 
     args = parser.parse_args()

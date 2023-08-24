@@ -9,9 +9,9 @@ import ipaddress
 from typing import Dict, List
 
 
+LOGGING_FORMAT = '%(asctime)s - %(message)s'
+logging.basicConfig(format=LOGGING_FORMAT)
 logger = logging.getLogger("this")
-shandler = logging.StreamHandler()
-logger.addHandler(shandler)
 logger.setLevel(logging.INFO)
 
 
@@ -114,6 +114,7 @@ def main():
 
     ips = []
     for session in sessions:
+        logger.info("Checking region: %s", session.region_name)
         for source in [ips_from_eips, ips_from_enis, ips_from_vpn]:
             ips.extend(source(session=session))
 
