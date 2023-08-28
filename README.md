@@ -25,6 +25,9 @@ pip install -r requirements.txt
 
 ## Usage
 
+Both scripts provide their output to `stdout` in JSON format.
+All logging related messages will be sent to `stderr`.
+
 ### Cost Estimation script
 
 `public_ipv4_cost_estimation.py` provides retroactive cost estimation in USD based on Cost Explorer usage data.
@@ -32,7 +35,7 @@ pip install -r requirements.txt
 You will be required to provide the start and end dates to run the script.
 
 ```bash
-./public_ipv4_cost_estimation.py --start-date 2023-07-01 --end-date 2023-08-01
+# ./public_ipv4_cost_estimation.py --start-date 2023-07-01 --end-date 2023-08-01
 ```
 
 ### Info script
@@ -40,6 +43,6 @@ You will be required to provide the start and end dates to run the script.
 `public_ipv4_info.py` provides information about current public IPv4 used in all regions.
 
 ```bash
-./public_ipv4_info.py
+# ./public_ipv4_info.py
 ```
 
