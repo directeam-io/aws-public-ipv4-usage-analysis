@@ -4,9 +4,9 @@ Recently AWS released a [statement](https://aws.amazon.com/blogs/aws/new-aws-pub
 
 As a way to help identifying and estimating the effect of this pricing update on the users, they released a tool called `Public IPv4 insights` in the IPAM console.
 
-`Public IPv4 insights` shows how many public IPs exist per region and is based on the network interfaces.
+Public IPv4 insights shows how many public IPs exist per region and is based on the network interfaces.
 
-`Public IPv4 insights` doesn't have API support, and for organizations with multiple accounts and regions it can be time consuming to iterate over all of them and estimate the future additional price.
+Public IPv4 insights doesn't have API support, and for organizations with multiple accounts and regions it can be time consuming to iterate over all of them and estimate the future additional price.
 As a solution for that, we created this repository that contains the followings scripts.
 
 ## Installation
