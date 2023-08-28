@@ -25,8 +25,8 @@ pip install -r requirements.txt
 
 ## Usage
 
-Both scripts provide their output to `stdout` in JSON format.
-All logging related messages will be sent to `stderr`.
+Both scripts provide their output to `stdout` in JSON format. 
+logs are be sent to `stderr`.
 
 ### Cost Estimation script
 
