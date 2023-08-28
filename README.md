@@ -8,7 +8,7 @@ The "AWS Public IPv4 Insights" feature provides information on the number of pub
 
 For large organizations it can be time consuming to iterate over all regions and accounts in the AWS console to create an estimation of future additional cost.
 
-As a solution, we created this repository that contains the followings scripts.
+As a solution, we created this repository that contains the following scripts.
 
 ## Installation
 
